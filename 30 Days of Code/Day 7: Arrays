@@ -1,0 +1,25 @@
+# Given an array A of N integers, print A's elements in reverse order 
+# as a single line of space-separated numbers.
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().rstrip().split()))
+
+b = []
+n = len(arr)
+
+for i in range(0,n):
+    temp = arr[n-i-1]
+    b.append(temp)
+    b.append(' ')
+
+str1 = ''.join(str(e) for e in b)
+print(str1)
